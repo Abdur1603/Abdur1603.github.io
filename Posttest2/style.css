@@ -1,0 +1,251 @@
+*{
+    font-family: "SUSE", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.main{
+    margin: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px black;
+    padding: 5rem;
+    background-color: white;    
+}
+.main img{
+    width: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px black;
+    border: white solid 0.1rem;
+}
+.head{
+    margin-bottom: 0.5rem;
+}
+.head h1{
+    font-size: 3rem;
+}
+.head p{
+    font-size: 1.5rem;
+}
+.list{
+    background-color: rgb(228, 228, 228);
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.pesanan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+} 
+.pesanan img{
+    width: 5rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+.pesanan div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}   
+.pesanan .Harga{ 
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.nama-produk{
+    width: 40%;
+    font-size: 1.3em;
+    margin-right: 20em;
+}
+.pesanan input{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.total h3{
+    font-size: 1.5rem;
+}   
+.Payment{
+  font-size: 1.3em;
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+input[type="radio"]{
+  display: none;
+}
+.title-Payment{
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+.Payment label{
+  position: relative;
+  color: rgb(58, 199, 199);
+  border: 0.1em solid rgb(58, 199, 199);
+  border-radius: 0.5em;
+  padding: 0.4em;
+  margin-right: 0.5em;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px rgb(58, 199, 199);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Payment label::before{
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  border: 0.1em solid rgb(58, 199, 199);
+}
+.Payment input[type="radio"]:checked + label{
+  color: #f0f0f0;
+  background-color: rgb(58, 199, 199);
+}
+.Payment input[type="radio"]:checked + label::before{
+  background-color: #f0f0f0;
+}
+.Payment label:hover{
+  background-color: rgb(58, 199, 199);
+  color: #f0f0f0;
+}
+.btn{
+    width: 100%;
+    margin: 1em auto 0 auto;
+    background-color: rgb(58, 199, 199);
+    color: #f0f0f0;
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 0 0 5px rgb(58, 199, 199);
+    border: 0.1em solid rgb(58, 199, 199);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #f0f0f0;
+    color: rgb(58, 199, 199);
+    border: 0.1em solid rgb(58, 199, 199);
+}
+.infoPelanggan{
+  background: linear-gradient(to right, rgb(58, 199, 199), #9bcbdd);
+  border-radius: 5px;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  justify-content: space-between;
+  margin: 1rem
+}
+.infoPelanggan div{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+.infoPelanggan input{
+  width: 25%;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.1em solid white;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(58, 199, 199);
+} 
+footer{
+  padding: 5rem 12rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #F1F1F1;
+}
+footer a{
+  background-color: white;
+  color: rgb(58, 199, 199);
+  border: 1px solid rgb(58, 199, 199);
+  width: 6rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+}
+footer a:hover{
+  background-color: rgb(58, 199, 199);
+  width: 6rem;
+  color: white;
+  margin-top: rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .main{
+    margin: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px black;
+    padding: 3rem;
+    background-color: white;   
+  }
+  .nama-produk{
+    margin-right: 12rem;
+  }
+}
+@media screen and (min-width: 340px) and (max-width: 768px){
+  .main{
+    margin: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px black;
+    padding: 2.5rem;
+    background-color: white;   
+  }
+  .head h1{
+    font-size: 2rem;
+  }
+  .head p{
+    font-size: 1rem;
+  }
+  .list .pesanan{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .pesanan .Harga{
+    align-items: center;
+  }
+  .nama-produk{
+    margin-right: 0px;
+    font-size: 1em;
+    text-align: center;
+  }
+  .pesanan img{
+    margin-right: 0;
+  }
+  .Payment{
+    flex-direction: column;
+  }
+  footer{
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h2{
+    font-size: 20px;
+  }
+}
