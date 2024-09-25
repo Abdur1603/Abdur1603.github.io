@@ -1,0 +1,513 @@
+:root{
+    --primary-color: #fafafa;
+    --secondary-color: #1E1F24;
+    --tertiary-color: #BE3144;
+}
+
+.blackmode{
+    --primary-color: #0D0C0C;
+    --secondary-color: #fafafa;
+    --tertiary-color: #872341;
+}
+*{
+    font-family: "SUSE", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3s;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--tertiary-color);
+    padding: 2rem 5rem;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    transition: top 0.3s;
+    scroll-behavior: smooth;
+}
+nav i{
+    display: flex;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    gap: 3rem;
+    color: var(--primary-color);
+}
+nav .icons{
+    display: flex;
+    gap: 1rem;
+}
+nav .burger{
+    display: none;
+}
+nav .btn{
+    display: flex;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+nav .btn a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+nav .btn:hover a{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--primary-color);
+    transition: 0.2s;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu a{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    transition: 0.2s;
+}
+.nav-menu a:hover{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    transition: 0.2s;
+}
+.hidden{
+    top: -90px;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(Media/Desaintanpajudul.png);
+    background-repeat: no-repeat ;
+    background-attachment: fixed;    
+    background-size: cover;
+}
+.header .header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40%;
+}
+.header h1{
+    font-size: 3rem;
+}
+.main{
+    background-color: var(--primary-color);
+    padding-bottom: 3rem;
+}
+#membership .membership-items{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+#membership .membership-items ul{
+    list-style-type: none;
+    color: var(--secondary-color);
+    padding: 0;
+}
+#membership .membership-item{   
+    background-color: var(--primary-color);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    width: 20rem;
+    height: 31rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid var(--secondary-color);
+}
+#membership h2{
+    display: flex;
+    font-size: 10rem;
+    font-weight: 700;
+    color: var(--tertiary-color);
+    justify-content: center;
+}
+#membership .membership-item img{
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    background-color: #F0F0F0;
+}
+#membership .centang{
+    list-style-type: "✅";
+}
+#membership .silang{
+    list-style-type: "❌";
+}
+#membership .btn a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+#membership .btn{
+    width: 100%;
+    margin: 1em auto 0 auto;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0 5px var(--tertiary-color);
+    border: 0.1em solid var(--tertiary-color);
+    cursor: pointer;
+    transition: 1s;
+}
+#membership .btn:hover a{
+    color: var(--tertiary-color);
+    transition: 0.3s;
+}
+#membership .btn:hover{
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    transition: 0.3s;
+}
+#membership .membership-item h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+#membership .membership-item h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--tertiary-color);
+    margin-bottom: 2rem;
+}
+#classes .classes-items{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+#classes h2{
+    display: flex;
+    font-size: 10rem;
+    font-weight: 700;
+    color: var(--tertiary-color);
+    justify-content: center;
+}
+#classes .classes-item{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    align-items: center;
+}
+#classes .classes-item p{
+    text-align: center; 
+    font-size: 1.25rem;
+}
+#classes .classes-item img{
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    background-color: var(--primary-color);
+}
+#classes .centang{
+    list-style-type: "✅";
+}
+#classes .silang{
+    list-style-type: "❌";
+}
+#classes .btn a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+#classes .btn{
+    width: 100%;
+    margin: 1em auto 0 auto;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0 5px var(--tertiary-color);
+    border: 0.1em solid var(--tertiary-color);
+    cursor: pointer;
+    transition: 1s;
+}
+#classes .btn:hover a{
+    color: var(--tertiary-color);
+    transition: 0.3s;
+}
+#classes .btn:hover{
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    transition: 0.3s;
+}
+#classes .classes-item h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+#classes .classes-item h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--tertiary-color);
+    margin-bottom: 2rem;
+}
+.border-text {
+    font-size: 8rem;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    -webkit-text-stroke: 2px var(--secondary-color);
+    text-align: center;
+    transition: color 0.3s ease, -webkit-text-stroke-color 0.3s ease;
+}
+.footer{
+    padding: 4rem;
+    font-size: 0.75rem;
+    background-color: var(--tertiary-color);
+}
+.footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer a{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: var(--primary-color);
+    transition: 0.2s;
+    font-size: 1rem;
+}
+.footer .title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    justify-content: center;
+    color: var(--primary-color);
+    padding-bottom: 2rem;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1; 
+}
+
+.about-image img {
+    width: 50%;
+    border-radius: 8px;
+    display: flex;
+}
+
+.about-text {
+    flex: 2;
+    color: var(--secondary-color);
+}
+.about-text h1 {
+    margin-bottom: 10px;
+}
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+html {
+    font-size: 14px;
+}
+nav {
+    padding: 1rem 2rem;
+}
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    position: absolute;
+    top: 100px;
+    left: 1;
+    padding: 1rem;
+}
+.nav-menu a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+.nav-menu.active {
+    display: flex;
+}
+.nav-menu a {
+    font-size: 0.9rem;
+}
+.header .header-text h1 {
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 2rem 5rem;
+    }
+
+    .header .header-text h1 {
+        font-size: 3rem;
+    }
+
+    .nav-menu a {
+        font-size: 1rem;
+    }
+
+    #membership .membership-items {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    #classes .classes-items {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+@media (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 2rem 8rem;
+    }
+
+    .header .header-text h1 {
+        font-size: 4rem;
+    }
+
+    #membership .membership-items {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    #classes .classes-items {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .nav-menu {
+        display: none; 
+    }
+
+    nav .burger {
+        display: block;
+    }
+
+    nav .icons {
+        justify-content: flex-end;
+    }
+
+    .header .header-text {
+        margin-left: 2rem;
+    }
+
+    .header .header-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    #membership .membership-items {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #classes .classes-items {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .membership-item, .classes-item {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+}
+
+.burger i {
+    font-size: 2rem;
+}
+
+nav .burger.active ~ .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nav-menu a {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .burger {
+        display: none;
+    }
+
+ 
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+    }
+}
