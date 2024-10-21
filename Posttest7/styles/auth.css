@@ -1,0 +1,96 @@
+body {
+  background-color: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-password-container{
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.auth-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.auth-description {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.auth-card {
+  background-color: white;
+  border: 1px solid rgb(220, 220, 220);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-form-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.auth-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5px;
+}
+
+.auth-form-input {
+  border: 1px solid grey;
+  height: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 20px;
+}
+
+.auth-button {
+  border: 0;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 25px;
+  background-color: green;
+  color: white;
+}
+
+.auth-button:hover {
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.auth-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.auth-text a {
+    color: green;
+    font-weight: 700;
+}
+
+.show-password {
+  cursor: pointer;
+}
