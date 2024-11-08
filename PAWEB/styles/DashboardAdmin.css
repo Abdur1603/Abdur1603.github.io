@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.kartu {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.kartu .konten {
+    display: flex;
+    align-items: center;
+}
+
+.kartu .number {
+    font-size: 3em;
+    margin-right: 20px;
+    color: #333;
+}
+
+.kartu .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.kartu .text h2 {
+    margin: 0;
+    color: #333;
+}
+
+.kartu .text small {
+    color: #666;
+}
+
+.kartu .separator {
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.kartu .text a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.kartu .text a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    .kartu .number {
+        font-size: 2em; /* Smaller font size for numbers */
+    }
+}
+
+@media (max-width: 480px) {
+    .kartu {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .kartu .number {
+        margin: 0 0 10px 0;
+        font-size: 2em; /* Smaller font for very small screens */
+    }
+
+    .kartu .text {
+        align-items: center;
+    }
+}

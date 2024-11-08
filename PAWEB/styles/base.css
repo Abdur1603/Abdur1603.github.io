@@ -1,0 +1,19 @@
+*{  
+    font-family: "SUSE", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+a,
+.button .navbar-item {
+  text-decoration: none;
+  color: unset;
+}

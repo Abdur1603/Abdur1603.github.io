@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20rem;
+  padding-bottom: 30rem;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.username {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.membership-status {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.membership-status span {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.back-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .profile-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .username {
+    font-size: 1.3em;
+  }
+
+  .membership-status {
+    font-size: 0.9em;
+  }
+
+  .back-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .profile-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .profile-photo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .username {
+    font-size: 1.1em;
+  }
+
+  .membership-status {
+    font-size: 0.8em;
+  }
+
+  .back-button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+}
