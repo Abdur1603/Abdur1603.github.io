@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+#overlay, #success-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    font-family: 'poppins';
+}
+  
+.popup {
+    background: #fff;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.popup h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+  
+.popup p {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #555;
+}
+  
+.popup .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+  
+.popup button {
+    width: 45%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+  
+.popup button:hover {
+    background-color: #33dbff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.popup button:focus,
+.popup button:active {
+    background-color: #00bfff;
+    color: #fff;
+    outline: none;
+    transform: translateY(2px);
+}
+  
+.popup .cancel {
+    color: #333;
+}
+  
+.popup .delete {
+    color: #333;
+    background-color: #ffffff;
+}
+  
+#overlay.show, #success-overlay.show {
+    visibility: visible;
+}
+  
+.delete-icon {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #00bfff;
+    cursor: pointer;
+    margin: 20px;
+}
+  

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body {
+    background-color: #E2E8F0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #E2E8F0;
+}
+
+header .user-actions {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #33DBFF;
+}
+
+header nav .highlight {
+    color: #33DBFF;
+}
+
+main {
+    padding: 40px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 210px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card h3 {
+    font-size: 1em;
+    text-align: left;
+}
+
+.card .count {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.card a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9em;
+    display: block;
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background-color: #E2E8F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000000;
+}
+
+footer p, footer a {
+    color: #777;
+    font-size: 0.9em;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0 10px;
+}

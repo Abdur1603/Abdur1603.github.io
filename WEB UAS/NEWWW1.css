@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #E2E8F0; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #E2E8F0;
+}
+
+header .logo{
+    flex: 1;
+}
+
+.logo img{
+    width: 60px;
+    height: auto;
+    margin-left: 20px;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1A1A1A;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #33DBFF;
+}
+
+header nav .highlight {
+    color: #33DBFF;
+}
+
+main {
+    padding: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px; /* jarak antar card secara horizontal */
+    row-gap: 50px; /* jarak antar baris card */
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.card {
+    width: 420px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-left h2 {
+    font-size: 60px;
+    margin: 0;
+    color: #1A1A1A;
+}
+
+.card-right {
+    text-align: left;
+}
+
+.card-title {
+    font-size: 16px;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.card-date {
+    font-size: 14px;
+    color: #999;
+    margin-top: 4px;
+}
+
+.card-link {
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+
+footer {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #E2E8F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000000;
+}
+
+footer p, footer a {
+    color: #777;
+    font-size: 0.9em;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0 10px;
+}

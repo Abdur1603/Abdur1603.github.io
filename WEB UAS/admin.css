@@ -1,0 +1,49 @@
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+}
+
+.table_container {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 0px 60px 10px 60px;
+}
+th {
+    border-bottom: 1px solid #CECECE;
+}
+tbody{
+    text-align: center;
+}
+.pagination {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.pagination{
+    justify-content: space-between;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+a button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
